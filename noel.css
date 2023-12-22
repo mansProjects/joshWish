@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+.h1{
+    color: #f51111;
+    font-size: 15px;
+    text-align: center;
+    animation: noelH1 2s infinite;
+    margin-bottom: 20px;    
+}
+.h1_{
+    color: #f51111;
+    font-size: 18px;
+    text-align: center;
+    animation: noelH1_ 1s infinite;
+    
+}
+
+.friendsImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.friendsImages img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.photo img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    animation: imageDancing 5s infinite;
+}
+@keyframes imageDancing {
+    0%{
+        width: 70%;
+    }
+    75%{
+        width: 50%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.photo h2{
+    font-size: 18px;
+    color: #f51111;
+    text-align: center;
+}
+@keyframes noelH1 {
+    0%{
+        transform: scale(0,1);
+        color: rgb(8, 73, 215);
+    }
+    75%{
+        transform: scale(1,2);
+        color: #f51111;
+    }
+    100%{
+        transform: scale(1,0);
+        color: rgb(231, 216, 7);
+    }
+}
+
+@keyframes noelH1_ {
+    0%{
+        transform: scale(1,0);
+        color: rgb(8, 73, 215);
+    }
+    100%{
+        transform: scale(1,1.5);
+        color: #f51111;
+    }
+}
+main .image{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image video{
+    width: 180px;
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .photo input{
+    border: .5px dashed #f51111;
+    padding: 10px;
+    margin-top: 10px;
+}
