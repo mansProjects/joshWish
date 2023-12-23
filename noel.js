@@ -20,6 +20,10 @@ btn.addEventListener('click',()=>{
              inputSection.classList.add('friendsImages')
              inputSection.innerHTML="<img src='eureka.png'><br><h2>Mwana poto nanga !!!! Je revais te voir faire une émission aux Etats Unis j'attends toujours hein! Je vous aime beaucoup et j'ai pensé à vous en ce fin d'année. joyeux Noel et Meilleurs voeux!</h2>"
             break;
+        case 'Aimerance':
+                inputSection.classList.add('friendsImages')
+                inputSection.innerHTML="<img src='aimerance.png'><br><h2 style='color:#113ff5'>Hey! ma petite b, Tu sais quoi ! Je t'aime énormement et tu le sais je crois, mais là n'est pas la raison principale de ce message. En ce moment de la fin je lève mon verre à ton bonheur toi qui a su rester là malgré tout</h2>"
+               break;    
         case 'Ficha':
              inputSection.classList.add('friendsImages')
              inputSection.innerHTML="<img src='ficha.png' ></img><br><h2>FICHA!!Jolie prénom d'abord ! Une grande femme que j'admire beaucoup, fière de t'avoir comme amie. Joyeux Noel et Meilleurs voeux!!</h2>"
