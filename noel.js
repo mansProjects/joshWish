@@ -2,6 +2,8 @@ const friendsImages = document.getElementById('images')
 const btn = document.getElementById('btn')
 const friendName = document.getElementById('friendName')
 const inputSection = document.querySelector('.photo')
+const happyBirthday = document.querySelector('.image')
+const titreAnnonce = document.querySelector('.h1')
 btn.addEventListener('click',()=>{
     switch (friendName.value) {
         case 'Altesse':
@@ -14,8 +16,14 @@ btn.addEventListener('click',()=>{
             break;
         case 'Emmanuel':
              inputSection.classList.add('friendsImages')
-             inputSection.innerHTML="<img src='<img src='<img src='emmanuel.png'><br><h2>A force de fréquenter certains établissement j'arrive à découvrir les gens biens dont toi Emma, Joyeux Noel et Meilleurs voeux bro!</h2>"
+             inputSection.innerHTML="<img src='emmanuel.png'><br><h2>A force de fréquenter certains établissement j'arrive à découvrir les gens biens dont toi Emma, Joyeux Noel et Meilleurs voeux bro!</h2>"
             break;
+            case 'Daniel':
+                happyBirthday.classList.add('friendsImages')
+                inputSection.innerHTML=''
+                titreAnnonce.innerHTML='Gloria a pensé à vous!'
+                happyBirthday.innerHTML="<img src='Daniel.png'><br><h2>En ce jour si beau et merveuilleux, je tiens à te souhaiter un joyeux anniversaire mon ami Daniel Biloko.Tu sais je ne regrette pas d'avoir connu une telle personne comme toi dans ma vie,qu'il plaise à Dieu de te benir et t'accorde une longue vie l'Homme aux fossettes. Je t'aime beaucoup!<br><span>Gloria</span></h2>"
+               break;    
         case 'Eureka':
              inputSection.classList.add('friendsImages')
              inputSection.innerHTML="<img src='eureka.png'><br><h2>Mwana poto nanga !!!! Je revais te voir faire une émission aux Etats Unis j'attends toujours hein! Je vous aime beaucoup et j'ai pensé à vous en ce fin d'année. joyeux Noel et Meilleurs voeux!</h2>"
