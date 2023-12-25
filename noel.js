@@ -6,7 +6,11 @@ const happyBirthday = document.querySelector('.image')
 const titreAnnonce = document.querySelector('.h1')
 btn.addEventListener('click',()=>{
     switch (friendName.value) {
-        case 'Altesse':
+        case 'Helvine':
+            inputSection.classList.add('friendsImages')
+            inputSection.innerHTML="<img src='helvine.jpg'><br><h2>L'age n'exclut pas la gentillesse ni l'amour, une danseuse à l'énergie au rendez-vous! Vous comptez pour moi chère Vine Kambombo alors pour ces fetes de fin d'année j'ai pu pensez à vous. Joyeux Noel et Meilleurs voeux !!!!!</h2>"
+           break;
+           case 'Altesse':
             inputSection.classList.add('friendsImages')
             inputSection.innerHTML="<img src='altesse.png' ><br><h2>Vous comptez pour moi chère Altesse alors pour ces fetes de fin d'année j'ai pu pensez à vous. Joyeux Noel et Meilleurs voeux !!!!!</h2>"
            break;
